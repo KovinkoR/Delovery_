@@ -1,0 +1,71 @@
+
+body{
+background-color: #63AFD0;
+color: #black;
+padding-left: 20px;
+}
+
+.logo {
+    /* background-image: url(/img/delivery-computer-icons-courier-business-buying-and-selling.jpg); */
+    width: 50px;
+    height: 50px;
+    /* background-color: black; */
+}
+
+.toRight {
+  position: absolute;
+  right: 3%;
+  top: 5%;
+  padding: 18px;
+}
+
+.toRightLogout {
+  position: absolute;
+  padding: 18px;
+  right: 12%;
+  top: 5%;
+}
+
+.toRightIf {
+  position: absolute;
+  padding: 18px;
+  right: 33%;
+  top: -95px;
+}
+
+.buttonHome {
+    font-size: 20px;
+}
+
+img{
+    padding-top: 10px;
+    background: transparent;
+}
+/* .carousel-inner .active.left  { left: -25%;             }
+.carousel-inner .active.right { left: 25%;              } */
+/* .carousel-inner .next         { left: 25%               }
+.carousel-inner .prev         { left: -25%              } */
+/* .carousel-control.left        { background-image: none; }
+.carousel-control.right       { background-image: none; }
+.carousel-inner .item         { background: white;      } */
+
+.carouselHome{
+    width: 600px;
+    height: 80px;
+}
+
+.courierProfile{
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.greeting{
+    /* width: 300px; */
+    height: 30px;
+}
+
+.butUserCourier{
+    font-size: 15px;
+   
+}
+

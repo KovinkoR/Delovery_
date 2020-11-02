@@ -1,0 +1,37 @@
+<br>{{user.userName}}, это Ваш личный кабинет!<br>
+
+<span>Ваш номер телефона: {{user.phone}}</span><br>
+<span>Ваша электронная почта: {{user.email}}</span><br>
+<span>Ваш адрес: {{user.location}}</span><br>
+Текущий заказ:
+{{#if user.currentOrder}}
+<div>
+  <li class="entry" id="{{user.currentOrder._id}}">
+
+    <a><img style="width: 5%"  src="/img/{{user.currentOrder.picSrc}}.png" alt="logoRestoran"></a>
+
+    <ul class="contents">
+      {{#each user.currentOrder.contents}}
+      <li>{{this}}</li>
+      {{/each}}
+    </ul>
+  </li>
+  <div>{{user.currentOrder.price}}</div>
+</div>
+{{/if}}
+<ul class="contents">Ваши заказы:
+  {{#each user.ordersArchive}}
+  <li class="entry" id="{{_id}}">
+
+    <a><img style="width: 5%" src="/img/{{this.picSrc}}.png" alt="logoRestoran"></a>
+
+    <ul class="contents">
+      {{#each contents}}
+      <li>{{this}}</li>
+      {{/each}}
+    </ul>
+  </li>
+  <div>{{price}}</div>
+  <a href="/offers/{{_id}}"></a>
+  {{/each}}
+</ul>

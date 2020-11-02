@@ -1,0 +1,36 @@
+<h2>Offers:</h2>
+
+<a href="/" class="badge badge-dark butUserCourier">home</a>
+<a href="/user/profile" class="badge badge-danger butUserCourier">profile</a>
+<div id="logoHolder">
+  {{!-- <img src="{{}}" alt="logoRestoran"> --}}
+</div><br>
+
+<main role="main">
+  <h2><span class="badge badge-secondary badge-success">Вы можете приобрести:</span></h2>
+  <ul class="offers">
+    {{#each offers}}
+   
+    <img style="width: 10%" src="./img/{{picSrc}}.png" alt="logoRestoran">
+    
+   
+    <li class="entry" id="{{_id}}">
+
+      {{!-- <a href="/offers/{{_id}}"><img style = "width: 15%" src="./img/bigmac.png" alt="logoRestoran"></a> --}}
+
+
+      <ul class="contents">В заказе следующие позиции:
+        {{#each contents}}
+        <li>{{this}}</li>
+        {{/each}}
+      </ul>
+    </li>
+    <div>Стоимость: {{price}} рублей</div>
+
+    <a href="/offers/{{_id}}" class="badge badge-dark butUserCourier">Купить</a><br><br>
+    {{/each}}
+    {{!-- <a href="/offers/{{_id}}" ></a> --}}
+
+  </ul>
+
+</main>

@@ -1,0 +1,18 @@
+  const transporter = nodemailer.createTransport({
+    service: "gmail",
+    auth: {
+      user: "deloveryelbrus@gmail.com",
+      pass: "Lyt5FPy27A",
+    },
+  });
+
+  const mailOptions = {
+    from: 'deloveryelbrus@gmail.com',
+    to: 'voronamk@mail.ru',
+    subject: 'Testing',
+    text: ``
+  }
+   transporter.sendMail(mailOptions, (err, info) => {
+     if (err) console.log(err);
+     else console.log('email sent' + info.response);
+   })

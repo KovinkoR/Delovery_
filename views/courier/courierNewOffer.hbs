@@ -1,0 +1,29 @@
+<h1>Разместить заказ</h1>
+
+<form id='newOffer' method='post' action='/courier/newOffer'>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <select name="select" class="btn btn-secondary dropdown-toggle">
+
+        <option>Macdonalds</option>
+        <option>KFC</option>
+        <option>BurgerKing</option>
+      </select><br>
+
+      <br>
+      <div id="offerInputsContainer" display="inline-block">
+        <input class="form-control" type='text' name='newOffer1' placeholder='Введите название товара' required>
+      </div><br>
+      <button class="btn btn btn-dark" id="goodInput">Add</button><br>
+      <br>
+      <input class="form-control " type='text' name='price' placeholder='Введите стоимость заказа' required>
+      <br>
+      <br>
+      <input class="geoLocal-control form-control" type='text' name='location' placeholder='Введите Ваше местоположение' required>
+      <br>
+      <button class="btn btn btn-dark" type='submit'>Разместить заказ</button>
+    </div>
+  </div>
+</form>
+
+<script src="/scripts/newOffer.js"></script>
