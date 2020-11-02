@@ -2,7 +2,7 @@
 
 <img width="600" alt="food delivery" src="https://user-images.githubusercontent.com/63601766/97871146-164be480-1d25-11eb-8882-5d301f58058c.jpg">
 
-Приложение для доставки еды.
+## Приложение для доставки еды.
 
 <img width="600" alt="food delivery" src="https://user-images.githubusercontent.com/63601766/97871816-0bde1a80-1d26-11eb-833b-7544747d2247.png">
 
